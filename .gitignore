@@ -112,3 +112,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+materials/[기술면접 가이드] 강의자료.zip
+materials/[기술면접 가이드] 강의자료/Chapter00_신입기술면접 가이드라인 오리엔테이션.pdf
+*.pdf
+*.zip
