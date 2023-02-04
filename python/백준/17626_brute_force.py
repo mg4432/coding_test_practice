@@ -22,4 +22,3 @@ def check(n) :
     return 4
 
 print(check(n))
-

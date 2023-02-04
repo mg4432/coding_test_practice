@@ -1,27 +1,19 @@
-M, N = map(int, input().split())
+n = int(input()) 
+lst = list(map(int, input().split()))
+lst.sort()
+t = int(input())
+answer = 0
 
-knows = input()
-if len(knows) == 1:
-    n_know, p_know = 0, [0]
-else:
-    n_know, p_know = int(knows[:1]), list(map(int, knows[1:].split()))
+l, r = 0, n-1
+while l < r :
+    Sum = lst[l] + lst[r]
+    if Sum < t : 
+        l += 1 
+    elif Sum > t : 
+        r -= 1 
+    else : 
+        answer += 1
+        r -= 1
+print(answer)
 
-party = {}
 
-for _ in range(N):
-    p = list(map(int, input().split()[1:]))
-    party[_] = p
-
-for _ in range(len(party)):
-    for key, values in party.items():
-        if len(set(values).intersection(set(p_know))) > 0:
-            p_know.extend(values)
-
-p_know = set(p_know)
-
-ans = 0
-for key, value in party.items():
-    if len(set(value).intersection(p_know)) == 0:
-        ans += 1
-
-print(ans)
