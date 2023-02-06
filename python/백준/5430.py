@@ -1,3 +1,4 @@
+from collections import deque
 
 def get_lst(lst) : 
     if len(lst) == 2 : 

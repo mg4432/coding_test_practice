@@ -13,3 +13,4 @@ for i in range(1, n) :
             lst[i][k] += max(lst[i-1][k-1], lst[i-1][k])
 
 print(max(lst[-1]))
+
