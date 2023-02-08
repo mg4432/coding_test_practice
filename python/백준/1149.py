@@ -10,3 +10,4 @@ for i in range(1, n) :
         lst[i][j] += min(house_i)
 
 print(min(lst[-1]))
+
