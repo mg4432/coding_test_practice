@@ -22,7 +22,7 @@ def dfs(x, y) :
                 check = 1
         if check == 1 :    
             graph[x][y] = 2
-            dfs(x-1, y) 
+            dfs(x-1, y)  
             dfs(x, y-1)
             dfs(x, y+1)
             dfs(x+1, y)
@@ -46,3 +46,4 @@ for comb in combinations(can, 3) :
 
 print(answer)
  
+

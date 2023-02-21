@@ -10,7 +10,7 @@ for _ in range(n) :
             if len(lst) == 0 : 
                 print('-1')
             else : 
-                print(lst.pop())
+                print(lst.popleft())
 
         elif s[0] == 'size' : 
             print(len(lst))
@@ -21,7 +21,13 @@ for _ in range(n) :
             else : 
                 print('0')
 
-        else : 
+        elif s[0] == 'front': 
+            if len(lst) > 0 : 
+                print(lst[0])
+            else : 
+                print('-1')
+
+        elif s[0] == 'back': 
             if len(lst) > 0 : 
                 print(lst[-1])
             else : 
